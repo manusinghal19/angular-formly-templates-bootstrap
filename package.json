@@ -1,6 +1,6 @@
 {
-  "name": "angular-formly-templates-bootstrap",
-  "version": "0.0.0-semantically-released.0",
+  "name": "angular-formly-templates-bootstrap-edgemetric",
+  "version": "6.3.1",
   "author": "Astrism <astrisms@gmail.com>",
   "contributors": [
     "Astrism <astrisms@gmail.com>",
@@ -9,7 +9,7 @@
   "homepage": "http://formly-js.github.io/angular-formly-templates-bootstrap/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/formly-js/angular-formly-templates-bootstrap.git"
+    "url": "https://github.com/manusinghal19/angular-formly-templates-bootstrap.git"
   },
   "main": "dist/angular-formly-templates-bootstrap.js",
   "licenses": [
@@ -38,7 +38,7 @@
     "api-check": ">=7.5.0",
     "bootstrap": "^3.2.0"
   },
-  "devDependencies": {
+  "dependencies": {
     "babel-core": "5.8.25",
     "babel-loader": "5.3.2",
     "commitizen": "1.0.5",
