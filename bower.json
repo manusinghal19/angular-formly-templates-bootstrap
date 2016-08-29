@@ -1,5 +1,5 @@
 {
-  "name": "angular-formly-templates-bootstrap",
+  "name": "angular-formly-templates-bootstrap-edgemetric",
   "authors": [
     "Astrism <astrisms@gmail.com>"
   ],
@@ -7,7 +7,7 @@
     "Astrism <astrisms@gmail.com>",
     "Kent C. Dodds <kent@doddsfamily.us>"
   ],
-  "main": "./dist/angular-formly-templates-bootstrap.js",
+  "main": "./dist/angular-formly-templates-bootstrap-edgemetric.js",
   "description": "Angular-Formly plugin which outputs bootstrap compatible form fields.",
   "keywords": [
     "AngularJs",
