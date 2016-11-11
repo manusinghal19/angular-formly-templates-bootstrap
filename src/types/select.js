@@ -1,7 +1,7 @@
 export default  ngModule => {
   ngModule.config(addSelectType);
 
-  const template = `<select class="form-control" ng-model="model[options.key]"></select>`;
+  const template = `<span class="styled-select"><select class="" ng-model="model[options.key]"></select></span>`;
 
   function addSelectType(formlyConfigProvider) {
     formlyConfigProvider.setType({

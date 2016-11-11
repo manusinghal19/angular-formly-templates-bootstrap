@@ -358,7 +358,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  function addInputType(formlyConfigProvider) {
 	    formlyConfigProvider.setType({
 	      name: 'input',
-	      template: '<input class="form-control" ng-model="model[options.key]">',
+	      template: '<input class="" ng-model="model[options.key]">',
 	      wrapper: ['bootstrapLabel', 'bootstrapHasError']
 	    });
 	  }
@@ -426,7 +426,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports['default'] = function (ngModule) {
 	  ngModule.config(addSelectType);
 
-	  var template = '<select class="form-control" ng-model="model[options.key]"></select>';
+	  var template = '<span class="styled-select"><select class="" ng-model="model[options.key]"></select></span>';
 
 	  function addSelectType(formlyConfigProvider) {
 	    formlyConfigProvider.setType({
@@ -476,7 +476,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  function addTextareaType(formlyConfigProvider) {
 	    formlyConfigProvider.setType({
 	      name: 'textarea',
-	      template: '<textarea class="form-control" ng-model="model[options.key]"></textarea>',
+	      template: '<textarea class="" ng-model="model[options.key]"></textarea>',
 	      wrapper: ['bootstrapLabel', 'bootstrapHasError'],
 	      defaultOptions: {
 	        ngModelAttrs: {

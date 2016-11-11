@@ -5,7 +5,7 @@ try {
   Package.describe({
     name: 'formly:angular-formly-templates-bootstrap-edgemetric',
     summary: '(official): Bootstrap templates for angular-formly',
-    version: '0.0.0-semantically-released.0',
+    version: '0.0.1',
     git: 'https://github.com/manusinghal19/angular-formly-templates-bootstrap.git',
   })
 

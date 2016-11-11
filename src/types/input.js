@@ -4,7 +4,7 @@ export default ngModule => {
   function addInputType(formlyConfigProvider) {
     formlyConfigProvider.setType({
       name: 'input',
-      template: '<input class="form-control" ng-model="model[options.key]">',
+      template: '<input class="" ng-model="model[options.key]">',
       wrapper: ['bootstrapLabel', 'bootstrapHasError']
     });
   }
