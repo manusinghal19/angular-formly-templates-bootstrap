@@ -1,4 +1,4 @@
-//! angular-formly-templates-bootstrap-edgemetric version 0.0.4 built with ♥ by Astrism <astrisms@gmail.com>, Kent C. Dodds <kent@doddsfamily.us> (ó ì_í)=óò=(ì_í ò)
+//! angular-formly-templates-bootstrap-edgemetric version 0.0.5 built with ♥ by Astrism <astrisms@gmail.com>, Kent C. Dodds <kent@doddsfamily.us> (ó ì_í)=óò=(ì_í ò)
 
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
@@ -77,7 +77,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    prefix: 'angular-formly-bootstrap'
 	  }
 	}));
-	ngModule.constant('formlyBootstrapVersion', ("0.0.4"));
+	ngModule.constant('formlyBootstrapVersion', ("0.0.5"));
 
 	__webpack_require__(6)(ngModule);
 	__webpack_require__(9)(ngModule);
@@ -476,7 +476,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  function addTextareaType(formlyConfigProvider) {
 	    formlyConfigProvider.setType({
 	      name: 'textarea',
-	      template: '<textarea class="" ng-model="model[options.key]" rows="{{to.rows || 10}}"></textarea>',
+	      template: '<textarea class="{{to.classes}}" ng-model="model[options.key]" rows="{{to.rows || 10}}"></textarea>',
 	      wrapper: ['bootstrapLabel', 'bootstrapHasError'],
 	      defaultOptions: {
 	        ngModelAttrs: {

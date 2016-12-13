@@ -4,7 +4,7 @@ export default  ngModule => {
   function addTextareaType(formlyConfigProvider) {
     formlyConfigProvider.setType({
       name: 'textarea',
-      template: '<textarea class="" ng-model="model[options.key]" rows="{{to.rows || 10}}"></textarea>',
+      template: '<textarea class="{{to.classes}}" ng-model="model[options.key]" rows="{{to.rows || 10}}"></textarea>',
       wrapper: ['bootstrapLabel', 'bootstrapHasError'],
       defaultOptions: {
         ngModelAttrs: {
