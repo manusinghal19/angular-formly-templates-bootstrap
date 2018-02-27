@@ -426,7 +426,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports['default'] = function (ngModule) {
 	  ngModule.config(addSelectType);
 
-	  var template = '<span class="styled-select"><select class="" ng-model="model[options.key]"></select></span>';
+	  var template = '<span class="styled-select"><select class="" ng-model="model[options.key]">\n    <option ng-hide="to.notNull" value="">{{to.nullDisplay}}</option>\n    </select></span>';
 
 	  function addSelectType(formlyConfigProvider) {
 	    formlyConfigProvider.setType({
@@ -449,7 +449,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	            optionsAttr: check.string.optional,
 	            labelProp: check.string.optional,
 	            valueProp: check.string.optional,
-	            groupProp: check.string.optional
+	            groupProp: check.string.optional,
+	            notNull: check.bool.optional,
+	            nullDisplay: check.string.optional
 	          }
 	        };
 	      }
