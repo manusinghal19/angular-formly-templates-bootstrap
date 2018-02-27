@@ -426,7 +426,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports['default'] = function (ngModule) {
 	  ngModule.config(addSelectType);
 
-	  var template = '<span class="styled-select"><select class="" ng-model="model[options.key]">\n    <option ng-hide="to.notNull" value="">{{to.nullDisplay}}</option>\n    </select></span>';
+	  var template = '<span class="styled-select"><select class="" ng-model="model[options.key]">\n    <option ng-hide="to.notNull" value="" disabled="disabled">{{to.nullDisplay}}</option>\n    </select></span>';
 
 	  function addSelectType(formlyConfigProvider) {
 	    formlyConfigProvider.setType({
