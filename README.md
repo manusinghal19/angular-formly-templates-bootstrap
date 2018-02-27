@@ -9,6 +9,8 @@ This is a template for angular-formly which adds templates with classes specific
 
 ### Demo http://angular-formly.com
 
+<a href="https://app.codesponsor.io/link/PKGFLnhDiFvsUA5P4kAXfiPs/formly-js/angular-formly-templates-bootstrap" rel="nofollow"><img src="https://app.codesponsor.io/embed/PKGFLnhDiFvsUA5P4kAXfiPs/formly-js/angular-formly-templates-bootstrap.svg" style="width: 888px; height: 68px;" alt="Sponsor" /></a>
+
 ## Dependencies
 - Required to use these templates:
  - angular
@@ -259,6 +261,12 @@ _Example radio field_
 
 ##### optionsAttr (string, optional)
 >`optionsAttr` is what is used as the attribute ngOptions will be applied to. Defaults to `ng-options`
+
+##### notNull (boolean, optional)
+>`notNull` whether to add an empty null option
+
+##### nullDisplay (string, optional)
+>`nullDisplay` Null option label
 
 ##### ngOptions (string, optional)
 >If provided, this is used instead of the default `ng-options` giving you full control (and rendering the other options uncessisary.
