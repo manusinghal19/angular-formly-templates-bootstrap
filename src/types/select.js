@@ -1,7 +1,9 @@
 export default  ngModule => {
   ngModule.config(addSelectType);
 
-  const template = `<span class="styled-select"><select class="" ng-model="model[options.key]"></select></span>`;
+  const template = `<span class="styled-select"><select class="" ng-model="model[options.key]">
+    <option ng-hide="to.notNull" value="">{{to.nullDisplay}}</option>
+    </select></span>`;
 
   function addSelectType(formlyConfigProvider) {
     formlyConfigProvider.setType({
@@ -25,7 +27,9 @@ export default  ngModule => {
           optionsAttr: check.string.optional,
           labelProp: check.string.optional,
           valueProp: check.string.optional,
-          groupProp: check.string.optional
+          groupProp: check.string.optional,
+          notNull: check.bool.optional,
+          nullDisplay: check.string.optional
         }
       })
     });
